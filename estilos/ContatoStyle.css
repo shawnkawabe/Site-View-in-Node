@@ -1,0 +1,48 @@
+lbl1{
+    font-family: Calibri;
+    color: #734dd5;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+lbl{
+    font-family: Calibri;
+    color: #734dd5;
+    font-size: 20px;
+}
+.ctt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.ctt textarea {
+    display: flex;
+    border: 2px solid #ccc;
+    font-family: Calibri;
+    border-radius: 3px;
+
+}
+.ctt div{
+    padding-top: 10px;
+}
+.ctt .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #f9f7f7;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #edebec;
+
+}
+input {
+    border: 2px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    font-family: Calibri;
+    border-radius: 3px;
+}

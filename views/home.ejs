@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shawn Kawabe</title>
+    <link href="HomeStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="MainStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="Mainscript.js" rel="script">
+</head>
+<body>
+<div id="main">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href='/'>Home</a>
+            </li>
+            <li>
+                <a href="/curriculo">Curriculum</a>
+            </li>
+            <li>
+                <a href="/contato">Contato</a>
+            </li>
+            <li>
+                <a onclick="form_log()">Login</a>
+                <ul id="log" class="menulog">
+                    <form action="/trylog">
+                        <li>
+                            <input type="text" name="loginu" class="i_n" id="nome.txt" placeholder="Login">
+                        </li>
+
+                        <li>
+                            <input type="text" name="pas" class="i_s" id="senha.txt" placeholder="Senha">
+                        </li>
+                        <li>
+                            <input type="submit" title="Entrar" value="Entrar" id="btn_log">
+                        </li>
+
+                    </form>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div><center>
+<div class="prf1">
+    <img id='fundo' src="japan2.jpg"  height="600px" >
+    <div class="prf2">
+
+        <div id="diE"></div>
+        <img id="diC" src="fotoshawnhome.png" width="200px" height="200px" ;>
+        <div id="diD"></div>
+    </div>
+</div>
+
+<div class="prt1">
+    <div id="bckg"> <a id="txta"> Shawn Kawabe</a>
+    <div class="prt2">
+        <div class="sep"></div>
+        <a style="font-size: 40px ; font-weight: normal; padding-top: 0.5%;">Sobre</a>
+
+        <a style="padding-top:30px;">Meu nome é Shawn Kawabe, Tenho 20 anos, estudo Ciência da Computação, nasci no japão, e se quiser saber mais sobre minha Trajetória Academica ou minhas Skills, visite o meu currículo.</a>
+        <div class="sep"></div>
+        <a style="font-size: 40px ; font-weight: normal; padding-top: 0.5%;">Hobbies</a>
+
+        <a style="padding-top:30px;">Tenho interesse na área de desenvolvimento de jogos, curto alguns jogos online e ler mangás. </a>
+
+        </div>
+    </div>
+</div>
+</center>
+
+<script>
+    cond = 1
+    a = document.getElementById('log');
+    e = document.getElementById('txt_erro')
+
+    function form_log() {
+        if (cond == 1) {
+            a.style.visibility = 'visible';
+            cond = 0
+        } else if (cond == 0) {
+            a.style.visibility = 'hidden';
+            cond = 1
+        }
+    }
+
+
+</script>
+</body>
+</html>

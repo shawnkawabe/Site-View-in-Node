@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curricullum</title>
+    <link href="MainStyle.css" rel="stylesheet" type="text/css"/>
+    <link href="CurriculoStyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="main">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href='/'>Home</a>
+            </li>
+            <li>
+                <a href="/curriculo">Curriculum</a>
+            </li>
+            <li>
+                <a href="/contato">Contato</a>
+            </li>
+            <li>
+                <a  onclick="form_log()">Login</a>
+                <ul id="log" class="menulog">
+                    <form action="/trylog">
+                        <li>
+                            <input type="text" name="loginu" class="i_n" id="nome.txt" placeholder="Login">
+                        </li>
+                        <li>
+                            <input type="text" name="pas" class="i_s" id="senha.txt" placeholder="Senha">
+                        </li>
+                        <li>
+                            <input type="submit" title="Entrar" value="Entrar" id="btn_log">
+                        </li>
+                    </form>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<br>
+<div class="img1"><img src="curriculum-vitae.png" height="200" width="200"><a class="txta">Curriculum Vitae</a></div>
+<div class="cv">
+
+    <div class="cva">
+
+
+        <img src="open-book.png" height="200" width="200">
+        <lbl style="font-size: 30px">Trajetória Acadêmica</lbl>
+        <a class="sep"></a>
+        <img src="im1.png" width="100px" height="100px">
+        <lbl>ETEC Lauro Gomes - Ensino Médio</lbl>
+        <lbl>ETEC Lauro Gomes - Técnico em Informática</lbl>
+        <a class="sep"></a>
+        <img src="student.png" style="padding-top: 10px" width="100px" height="100px">
+        <lbl>Centro Universitário FEI - Ciência da Computação</lbl>
+    </div>
+    <div class="cvt">
+        <img src="skill.png" height="200" width="200">
+        <lbl style="font-size: 30px">Skills</lbl>
+        <a class="sep"></a>
+        <lbl>Idiomas</lbl>
+        <div class="idiomas">
+            <div>
+                <img id='im' src="spanish-language.png" height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="english-language.png" height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="brazil.png" height="100" width="100">
+
+            </div>
+        </div>
+        <a class="sep"></a>
+        <lbl>Linguagens</lbl>
+        <div class="idiomas">
+            <div>
+                <img id='im' src='css-3.png' height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="html5.png" height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="js_732101.png" height="100" width="100">
+
+            </div>
+        </div>
+        <div class="idiomas">
+            <div>
+                <img id='im' src="c-logo-icon-28402.png" height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="py-file-icon-73723.png" height="100" width="100">
+
+            </div>
+            <div>
+                <img id='im' src="java.png" height="100" width="100">
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script>
+    cond = 1
+    a = document.getElementById('log');
+
+    function form_log() {
+        if (cond == 1) {
+            a.style.visibility = 'visible';
+            cond = 0
+        } else if (cond == 0) {
+            a.style.visibility = 'hidden';
+            cond = 1
+        }
+    }
+</script>
+
+</body>
+</html>

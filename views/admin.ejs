@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link href="AdminStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<nav class="menu">
+    <div id="main">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/">Sair</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="table">
+    <table style="width:100%">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Mensagem</th>
+        </tr>
+
+        <% for (i = 0; i < messages.nome.length; i++){ %>
+            <tr>
+                <td> <%= messages.nome[i] %></td>
+                <td> <%= messages.email[i] %> </td>
+                <td> <%= messages.tel[i] %> </td>
+                <td> <%= messages.message[i] %> </td>
+            </tr>
+        <% } %>
+
+    </table>
+</div>
+</body>
+</html>
